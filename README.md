@@ -1,0 +1,1 @@
+Cześć Przewięźl, mogę być pracownikiem miesiąca?

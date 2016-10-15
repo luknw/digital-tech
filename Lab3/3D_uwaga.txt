@@ -1,0 +1,5 @@
+Uwaga uwaga
+
+W 3D miał się znaleźć komponent SR, ale zamieniłem go na dwa NANDy (jak w 3A), gdyż MultiSimowy SR nie działał jak trzeba.
+
+~Przewięźl

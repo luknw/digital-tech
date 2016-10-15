@@ -1,3 +1,3 @@
 Cześć Przewięźl, mogę być pracownikiem miesiąca?
 
-Pracownik miesiąca: 'Jacek Długopolski'
+Pracownik miesiąca: `Jacek Długopolski`

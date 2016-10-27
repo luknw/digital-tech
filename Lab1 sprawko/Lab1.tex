@@ -59,7 +59,7 @@
 \multicolumn{1}{|l|}{\textbf{Temat ćwiczenia}} 					& \textbf{Numer ćwiczenia}  \\
 \multicolumn{1}{|l|}{Bramki logiczne i proste funkcje logiczne}	& 1                         \\ \hline
 \multicolumn{1}{|l|}{\textbf{Wykonawca}}       & \textbf{Ocena}            \\
-\multicolumn{1}{|l|}{Miron Markowski}          &                           \\ \hline
+\multicolumn{1}{|l|}{Łukasz Nawojowski}          &                           \\ \hline
 \end{tabular}
 \end{table}
 
@@ -72,10 +72,10 @@ Zapoznanie się z podstawowymi bramkami logicznymi i funkcjami logicznymi oraz s
 \section{Przebieg ćwiczenia}
 
 \subsection{Tabele prawdy}
-W programie multisim przetestowałem podane bramki logiczne:
+W programie Multisim przetestowałem podane bramki logiczne:
 
 \begin{center}
-\includegraphics[width=.7\textwidth]{tabela}
+\includegraphics[width=0.8\textwidth]{logic_analyzer/two_way_gates}
 \end{center}
 
 \begin{table}[H]
@@ -95,29 +95,31 @@ p & q & AND & OR & XOR & NAND & NOR & XNOR \\ \hline
 \end{table}
 
 \subsection{Pięciowejściowa bramka AND}
-\includegraphics[width=\textwidth]{AND5}
+\includegraphics[width=\textwidth]{logic_analyzer/five_way_and}
 Aby zbudować pięciowejściową bramkę AND potrzeba 4 zwykłych dwuwejściowych bramek. Każde z wejść musi być w stanie wysokim, aby na wyjściu również był stan wysoki.
 
 \subsection{Czterowejściowa bramka OR}
-\includegraphics[width=.9\textwidth]{OR4}
+\includegraphics[width=\textwidth]{logic_analyzer/four_way_or}
 Zaobserwowałem, że gdy dowolne wejście jest w stanie wysokim, wyjście również przyjmuje stan wysoki. 
 
 \subsection{Trzywejściowa bramka NAND}
-\includegraphics[width=\textwidth]{NAND3}
-Ta bramka na wyjściu daje stan wysoki tylko jeśli każde z wejść jest w stanie niskim.
+\includegraphics[width=\textwidth]{logic_analyzer/three_way_nand}
+Ta bramka na wyjściu daje stan niski tylko jeśli każde z wejść jest w stanie wysokim.
 
-\subsection{Przekształcenia na bramki NOR i NAND}
-Tutaj wstaw własnoręcznie zrobione przekształcenia
+\subsection{Wyprowadzenia}
+\includegraphics[width=\textwidth]{logic_analyzer/wyprowadzenia}
 \newpage
-Y = not A\\
-\includegraphics[width=\textwidth]{1e1}
-Y = not A and B\\
-\includegraphics[width=\textwidth]{1e2}
-\newpage
-Y = A or B\\
-\includegraphics[width=\textwidth]{1e3}
-Y = A XOR B\\
-\includegraphics[width=\textwidth]{1e4}
+\subsubsection{Y = not A}
+\includegraphics[width=\textwidth]{logic_analyzer/not_a}
+
+\subsubsection{Y = not A and B}
+\includegraphics[width=\textwidth]{logic_analyzer/not_a_and_b}
+
+\subsubsection{Y = A or B}
+\includegraphics[width=\textwidth]{logic_analyzer/a_or_b}
+
+\subsubsection{Y = A xor B}
+\includegraphics[width=\textwidth]{logic_analyzer/a_xor_b}
 
 
 

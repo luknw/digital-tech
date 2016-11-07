@@ -92,28 +92,34 @@ W oparciu o poniższą konfigurację segmentów:
 
 
 \centering
-\includegraphics[scale=0.1]{7seg/segconf}
+\includegraphics[scale=0.07]{7seg/segconf}
 
 \raggedright
-Dla każdego z 7 segmentów zrealizowano tablicę Karnaugh'a prezentującą pożądane zachowanie segmentu:\\
+Dla każdego z 7 segmentów zrealizowano tablicę Karnaugh'a prezentującą pożądane zachowanie segmentu, zminimalizowano funkcję logiczną i zbudowano odpowiedni obwód:\\
 \centering
-\textbf{Segment 0:}\\
+\textbf{Segment a:}\\
 \includegraphics[scale=0.8]{7seg/seg0}\\
-\textbf{Segment 1:}\\
+\includegraphics[scale=1]{7seg/seg0circ}\\
+\textbf{Segment b:}\\
 \includegraphics[scale=0.8]{7seg/seg1}\\
-\textbf{Segment 2:}\\
+\includegraphics[scale=1]{7seg/seg1circ}\\
+\textbf{Segment c:}\\
 \includegraphics[scale=0.8]{7seg/seg2}\\
-\textbf{Segment 3:}\\
+\includegraphics[scale=1]{7seg/seg2circ}\\
+\textbf{Segment d:}\\
 \includegraphics[scale=0.8]{7seg/seg3}\\
-\textbf{Segment 4:}\\
+\includegraphics[scale=1]{7seg/seg3circ}\\
+\textbf{Segment e:}\\
 \includegraphics[scale=0.8]{7seg/seg4}\\
-\textbf{Segment 5:}\\
+\includegraphics[scale=1]{7seg/seg4circ}\\
+\textbf{Segment f:}\\
 \includegraphics[scale=0.8]{7seg/seg5}\\
-\textbf{Segment 6:}\\
+\includegraphics[scale=1]{7seg/seg5circ}\\
+\textbf{Segment g:}\\
 \includegraphics[scale=0.8]{7seg/seg6}\\
+\includegraphics[scale=1]{7seg/seg6circ}\\
 \raggedright
 
-Tablice zminimalizowano metodą Karnaugh'a, jak punkcie 2.2, a następnie ze zminimalizowanych bramek logicznych zbudowano układ i podłączono go do wyświetlacza:
 
 
 \end{document}

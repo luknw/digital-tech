@@ -52,7 +52,7 @@
 
 \begin{table}[H]
 \label{my-label}
-\begin{tabular}[width=\textwidth]{|c|c|}
+\begin{tabular}[width=\textwidth, height=0.5]{|c|c|}
 \hline
 									           					&                           \\
 \includegraphics[height=3cm]{logo}             					& \textbf{Technika cyfrowa} \\ \hline
@@ -67,60 +67,94 @@
 Zapoznanie się z zastosowaniem tablic Karnaugh'a do minimalizacji graficznej złożonych funkcji logicznych oraz zaprojektowanie w Multisimie układu cyfrowego zwiększającego o 1 trzybitową liczbę całkowitą oraz wyświetlacza siedmiosegmentowego.
 
 \section{Przebieg ćwiczenia}
-
-\subsection{Układ cyfrowy inkrementujący trzybitową nieujemną liczbę całkowitą}
+\subsection{Inkrementator trzybitowych liczb całkowitych}
 \includegraphics[width=\textwidth]{7_bit_incr_karnaugh}
-\includegraphics[width=\textwidth]{2a}\\
-Układ składa się z trzech wejść reprezentujących 3-bitową liczbę całkowitą oraz czterech wyjść, z których to czwarte jest opcjonalne - reprezentuje ono flagę przeniesienia (carry flag). Najstarszy bit na wejściu i wyjściu znajduje się najniżej na wykresie.
+\includegraphics[width=\textwidth]{2aBetter}
 
-\newpage
+
 \subsection{Minimalizacja funkcji metodą tablic Karnaugha}
-Zadaną funkcję logiczną przedstawiono w poniższej tabeli, a następnie zminimalizowano korzystając z metody Karnaugh'a. Wynik minimalizacji również znajduje się na poniższym zdjęciu:
+Zadaną funkcję logiczną zminimalizowano za pomocą tablicy Karnaugh:
 
+\begin{figure}[H]
 \centering
-\includegraphics[scale=0.15]{2bTable}
-\raggedright
-W MultiSimie swtworzono model bramki niezminimalizowanej oraz zminimalizowanej. Porównano je Logic Analyzerem i oceniono, że minimalizacja przebiegła pomyślnie:
+\includegraphics[width=\textwidth]{min_func_karnaugh}
+\end{figure}
+
+Porównano zminimalizowaną funkcję z funkcją wejściową:
+
+\begin{figure}[H]
 \includegraphics[width=\textwidth]{2b}
-\newpage
+\end{figure}
 
+\newpage
 \subsection{Transkoder czterobitowych cyfr}
-\centering
 W oparciu o poniższą konfigurację segmentów:
 
-
+\begin{figure}[H]
 \centering
-\includegraphics[scale=0.07]{7seg/segconf}
+\includegraphics[width=0.25\textwidth]{7seg/segconf}
+\end{figure}
 
-\raggedright
-Dla każdego z 7 segmentów zrealizowano tablicę Karnaugh'a prezentującą pożądane zachowanie segmentu, zminimalizowano funkcję logiczną i zbudowano odpowiedni obwód:\\
+Dla każdego z siedmiu segmentów zrealizowano tablicę Karnaugha prezentującą pożądane zachowanie segmentu, zminimalizowano funkcję logiczną i zbudowano odpowiedni obwód.
+
+\subsubsection{Segment a}
+\begin{figure}[H]
 \centering
-\textbf{Segment a:}\\
-\includegraphics[scale=0.8]{7seg/seg0}\\
-\includegraphics[scale=1]{7seg/seg0circ}\\
-\textbf{Segment b:}\\
-\includegraphics[scale=0.8]{7seg/seg1}\\
-\includegraphics[scale=1]{7seg/seg1circ}\\
-\textbf{Segment c:}\\
-\includegraphics[scale=0.8]{7seg/seg2}\\
-\includegraphics[scale=1]{7seg/seg2circ}\\
-\textbf{Segment d:}\\
-\includegraphics[scale=0.8]{7seg/seg3}\\
-\includegraphics[scale=1]{7seg/seg3circ}\\
-\textbf{Segment e:}\\
-\includegraphics[scale=0.8]{7seg/seg4}\\
-\includegraphics[scale=1]{7seg/seg4circ}\\
-\textbf{Segment f:}\\
-\includegraphics[scale=0.8]{7seg/seg5}\\
-\includegraphics[scale=1]{7seg/seg5circ}\\
-\textbf{Segment g:}\\
-\includegraphics[scale=0.8]{7seg/seg6}\\
-\includegraphics[scale=1]{7seg/seg6circ}\\
-\raggedright
+\includegraphics[width=0.3\textwidth]{7seg/seg0}
+\includegraphics[width=\textwidth]{7seg/seg0circ}
+\end{figure}
 
-Wszystkie obwody podłączono do wyświetlacza siedmiosegmentowego i przetestowano. Wyświetlacz wskazywał przewidywane cyfry:
+\newpage
+\subsubsection{Segment b}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\textwidth]{7seg/seg1}
+\includegraphics[width=0.7\textwidth]{7seg/seg1circ}
+\end{figure}
+
+\subsubsection{Segment c}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\textwidth]{7seg/seg2}
+\includegraphics[width=0.7\textwidth]{7seg/seg2circ}
+\end{figure}
+
+\newpage
+\subsubsection{Segment d}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\textwidth]{7seg/seg3}
+\includegraphics[width=0.7\textwidth]{7seg/seg3circ}
+\end{figure}
+
+\subsubsection{Segment e}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\textwidth]{7seg/seg4}
+\includegraphics[width=0.7\textwidth]{7seg/seg4circ}
+\end{figure}
+
+\newpage
+\subsubsection{Segment f}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\textwidth]{7seg/seg5}
+\includegraphics[width=0.7\textwidth]{7seg/seg5circ}
+\end{figure}
+
+\subsubsection{Segment g}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\textwidth]{7seg/seg6}
+\includegraphics[width=0.7\textwidth]{7seg/seg6circ}
+\end{figure}
+
+\newpage
+Obwody podłączono do wyświetlacza siedmiosegmentowego i przetestowano. Wyświetlacz wskazywał przewidywane cyfry:
+
+\begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{7seg/7segall}
-
+\end{figure}
 
 \end{document}

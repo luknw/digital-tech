@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.4.25)  7 NOV 2016 13:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.4.25)  9 NOV 2016 11:00
 entering extended mode
 **Lab2.tex
 (Lab2.tex
@@ -1472,124 +1472,139 @@ Overfull \hbox (125.75325pt too wide) in paragraph at lines 55--64
 [][] 
  []
 
-<2a.png, id=5, 327.624pt x 238.491pt>
-File: 2a.png Graphic file (type png)
- <use 2a.png>
-Package pdftex.def Info: 2a.png used on input line 74.
-(pdftex.def)             Requested size: 262.09953pt x 190.79305pt.
- [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
- <./logo.jpg> <./2a.png>]
-<2bTable.jpg, id=14, 2850.65pt x 1445.4pt>
-File: 2bTable.jpg Graphic file (type jpg)
- <use 2bTable.jpg>
-Package pdftex.def Info: 2bTable.jpg used on input line 83.
-(pdftex.def)             Requested size: 427.57906pt x 216.80064pt.
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
-<2b.png, id=15, 806.41275pt x 300.52275pt>
+ []
+
+<2aKarnaugh.png, id=5, 203.5605pt x 281.25075pt>
+File: 2aKarnaugh.png Graphic file (type png)
+ <use 2aKarnaugh.png>
+Package pdftex.def Info: 2aKarnaugh.png used on input line 76.
+(pdftex.def)             Requested size: 162.84862pt x 225.00089pt.
+
+<2aBetter.png, id=7, 459.51675pt x 332.442pt>
+File: 2aBetter.png Graphic file (type png)
+ <use 2aBetter.png>
+Package pdftex.def Info: 2aBetter.png used on input line 78.
+(pdftex.def)             Requested size: 367.61389pt x 265.95395pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--79
+
+ []
+
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+ <./logo.jpg> <./2aKarnaugh.png>] <2bVog.png, id=15, 316.18124pt x 123.46124pt>
+File: 2bVog.png Graphic file (type png)
+ <use 2bVog.png>
+Package pdftex.def Info: 2bVog.png used on input line 86.
+(pdftex.def)             Requested size: 316.18047pt x 123.46092pt.
+
+<2b.png, id=16, 806.41275pt x 300.52275pt>
 File: 2b.png Graphic file (type png)
  <use 2b.png>
-Package pdftex.def Info: 2b.png used on input line 86.
+Package pdftex.def Info: 2b.png used on input line 89.
 (pdftex.def)             Requested size: 452.96782pt x 168.80516pt.
- [2 <./2bTable.jpg> <./2b.png>] <7seg/segconf.jpg, id=20, 1232.605pt x 1650.165
-pt>
+ [2 <./2aBetter.png> <./2bVog.png>] <7seg/segconf.jpg, id=21, 1232.605pt x 1650
+.165pt>
 File: 7seg/segconf.jpg Graphic file (type jpg)
 
 <use 7seg/segconf.jpg>
-Package pdftex.def Info: 7seg/segconf.jpg used on input line 95.
+Package pdftex.def Info: 7seg/segconf.jpg used on input line 98.
 (pdftex.def)             Requested size: 86.29115pt x 115.52335pt.
- <7seg/seg0.png, id=21, 122.859pt x 125.87025pt>
+ <7seg/seg0.png, id=22, 122.859pt x 125.87025pt>
 File: 7seg/seg0.png Graphic file (type png)
 
 <use 7seg/seg0.png>
-Package pdftex.def Info: 7seg/seg0.png used on input line 101.
+Package pdftex.def Info: 7seg/seg0.png used on input line 104.
 (pdftex.def)             Requested size: 98.28731pt x 100.69632pt.
- <7seg/seg0circ.png, id=22, 401.70074pt x 148.75575pt>
+ <7seg/seg0circ.png, id=23, 401.70074pt x 148.75575pt>
 File: 7seg/seg0circ.png Graphic file (type png)
 
 <use 7seg/seg0circ.png>
-Package pdftex.def Info: 7seg/seg0circ.png used on input line 102.
+Package pdftex.def Info: 7seg/seg0circ.png used on input line 105.
 (pdftex.def)             Requested size: 401.69975pt x 148.75537pt.
- <7seg/seg1.png, id=23, 105.996pt x 115.02975pt>
+ <7seg/seg1.png, id=24, 105.996pt x 115.02975pt>
 File: 7seg/seg1.png Graphic file (type png)
 
 <use 7seg/seg1.png>
-Package pdftex.def Info: 7seg/seg1.png used on input line 104.
+Package pdftex.def Info: 7seg/seg1.png used on input line 107.
 (pdftex.def)             Requested size: 84.79689pt x 92.02391pt.
- <7seg/seg1circ.png, id=24, 340.8735pt x 142.131pt>
+ [3 <./2b.png> <./7seg/segconf.jpg> <./7seg/seg0.png> <./7seg/seg0circ.png>] <7
+seg/seg1circ.png, id=31, 340.8735pt x 142.131pt>
 File: 7seg/seg1circ.png Graphic file (type png)
 
 <use 7seg/seg1circ.png>
-Package pdftex.def Info: 7seg/seg1circ.png used on input line 105.
+Package pdftex.def Info: 7seg/seg1circ.png used on input line 108.
 (pdftex.def)             Requested size: 340.87265pt x 142.13063pt.
- [3 <./7seg/segconf.jpg> <./7seg/seg0.png> <./7seg/seg0circ.png> <./7seg/seg1.p
-ng>] <7seg/seg2.png, id=31, 113.223pt x 118.041pt>
+ <7seg/seg2.png, id=32, 113.223pt x 118.041pt>
 File: 7seg/seg2.png Graphic file (type png)
 
 <use 7seg/seg2.png>
-Package pdftex.def Info: 7seg/seg2.png used on input line 107.
+Package pdftex.def Info: 7seg/seg2.png used on input line 110.
 (pdftex.def)             Requested size: 90.5785pt x 94.4329pt.
- <7seg/seg2circ.png, id=32, 320.397pt x 132.495pt>
+ <7seg/seg2circ.png, id=33, 320.397pt x 132.495pt>
 File: 7seg/seg2circ.png Graphic file (type png)
 
 <use 7seg/seg2circ.png>
-Package pdftex.def Info: 7seg/seg2circ.png used on input line 108.
+Package pdftex.def Info: 7seg/seg2circ.png used on input line 111.
 (pdftex.def)             Requested size: 320.39621pt x 132.49466pt.
- <7seg/seg3.png, id=33, 123.46124pt x 132.495pt>
+ <7seg/seg3.png, id=34, 123.46124pt x 132.495pt>
 File: 7seg/seg3.png Graphic file (type png)
 
 <use 7seg/seg3.png>
-Package pdftex.def Info: 7seg/seg3.png used on input line 110.
+Package pdftex.def Info: 7seg/seg3.png used on input line 113.
 (pdftex.def)             Requested size: 98.7691pt x 105.99612pt.
- <7seg/seg3circ.png, id=34, 430.0065pt x 243.309pt>
+ <7seg/seg3circ.png, id=35, 430.0065pt x 243.309pt>
 File: 7seg/seg3circ.png Graphic file (type png)
 
 <use 7seg/seg3circ.png>
-Package pdftex.def Info: 7seg/seg3circ.png used on input line 111.
+Package pdftex.def Info: 7seg/seg3circ.png used on input line 114.
 (pdftex.def)             Requested size: 430.00545pt x 243.30841pt.
- [4 <./7seg/seg1circ.png> <./7seg/seg2.png> <./7seg/seg2circ.png> <./7seg/seg3.
-png>] <7seg/seg4.png, id=42, 111.41624pt x 122.25674pt>
+ [4 <./7seg/seg1.png> <./7seg/seg1circ.png> <./7seg/seg2.png> <./7seg/seg2circ.
+png> <./7seg/seg3.png>]
+<7seg/seg4.png, id=44, 111.41624pt x 122.25674pt>
 File: 7seg/seg4.png Graphic file (type png)
-
-<use 7seg/seg4.png>
-Package pdftex.def Info: 7seg/seg4.png used on input line 113.
+ <use 7seg/seg4.png>
+Package pdftex.def Info: 7seg/seg4.png used on input line 116.
 (pdftex.def)             Requested size: 89.1331pt x 97.80551pt.
- <7seg/seg4circ.png, id=43, 386.6445pt x 148.75575pt>
+
+<7seg/seg4circ.png, id=45, 386.6445pt x 148.75575pt>
 File: 7seg/seg4circ.png Graphic file (type png)
-
-<use 7seg/seg4circ.png>
-Package pdftex.def Info: 7seg/seg4circ.png used on input line 114.
+ <use 7seg/seg4circ.png>
+Package pdftex.def Info: 7seg/seg4circ.png used on input line 117.
 (pdftex.def)             Requested size: 386.64355pt x 148.75537pt.
- <7seg/seg5.png, id=44, 121.05225pt x 129.48375pt>
+
+<7seg/seg5.png, id=46, 121.05225pt x 129.48375pt>
 File: 7seg/seg5.png Graphic file (type png)
-
-<use 7seg/seg5.png>
-Package pdftex.def Info: 7seg/seg5.png used on input line 116.
+ <use 7seg/seg5.png>
+Package pdftex.def Info: 7seg/seg5.png used on input line 119.
 (pdftex.def)             Requested size: 96.84192pt x 103.58711pt.
- <7seg/seg5circ.png, id=45, 342.078pt x 146.949pt>
+
+<7seg/seg5circ.png, id=47, 342.078pt x 146.949pt>
 File: 7seg/seg5circ.png Graphic file (type png)
-
-<use 7seg/seg5circ.png>
-Package pdftex.def Info: 7seg/seg5circ.png used on input line 117.
+ <use 7seg/seg5circ.png>
+Package pdftex.def Info: 7seg/seg5circ.png used on input line 120.
 (pdftex.def)             Requested size: 342.07715pt x 146.94864pt.
- [5 <./7seg/seg3circ.png> <./7seg/seg4.png> <./7seg/seg4circ.png> <./7seg/seg5.
-png>] <7seg/seg6.png, id=53, 111.41624pt x 113.82526pt>
+
+[5 <./7seg/seg3circ.png> <./7seg/seg4.png> <./7seg/seg4circ.png> <./7seg/seg5.p
+ng>] <7seg/seg6.png, id=55, 111.41624pt x 113.82526pt>
 File: 7seg/seg6.png Graphic file (type png)
-
-<use 7seg/seg6.png>
-Package pdftex.def Info: 7seg/seg6.png used on input line 119.
+ <use 7seg/seg6.png>
+Package pdftex.def Info: 7seg/seg6.png used on input line 122.
 (pdftex.def)             Requested size: 89.1331pt x 91.06032pt.
- <7seg/seg6circ.png, id=54, 411.33675pt x 136.1085pt>
+
+<7seg/seg6circ.png, id=56, 411.33675pt x 136.1085pt>
 File: 7seg/seg6circ.png Graphic file (type png)
-
-<use 7seg/seg6circ.png>
-Package pdftex.def Info: 7seg/seg6circ.png used on input line 120.
+ <use 7seg/seg6circ.png>
+Package pdftex.def Info: 7seg/seg6circ.png used on input line 123.
 (pdftex.def)             Requested size: 411.33574pt x 136.10815pt.
- <7seg/7segall.png, id=55, 459.51675pt x 333.6465pt>
-File: 7seg/7segall.png Graphic file (type png)
 
-<use 7seg/7segall.png>
-Package pdftex.def Info: 7seg/7segall.png used on input line 125.
+<7seg/7segall.png, id=57, 459.51675pt x 333.6465pt>
+File: 7seg/7segall.png Graphic file (type png)
+ <use 7seg/7segall.png>
+Package pdftex.def Info: 7seg/7segall.png used on input line 128.
 (pdftex.def)             Requested size: 452.96782pt x 328.90083pt.
 
 
@@ -1599,19 +1614,19 @@ See the caption package documentation for explanation.
 [6 <./7seg/seg5circ.png> <./7seg/seg6.png> <./7seg/seg6circ.png>] [7 <./7seg/7s
 egall.png>] (Lab2.aux) ) 
 Here is how much of TeX's memory you used:
- 32070 strings out of 493698
- 774293 string characters out of 3144409
+ 32075 strings out of 493698
+ 774402 string characters out of 3144409
  821977 words of memory out of 3000000
- 34886 multiletter control sequences out of 15000+200000
+ 34890 multiletter control sequences out of 15000+200000
  44077 words of font info for 44 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  62i,14n,77p,10388b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.e
 nc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb>
-Output written on Lab2.pdf (7 pages, 1527261 bytes).
+Output written on Lab2.pdf (7 pages, 860910 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
+ 78 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -71,20 +71,23 @@ Zapoznanie się z zastosowaniem tablic Karnaugh'a do minimalizacji graficznej z�
 \section{Przebieg ćwiczenia}
 
 \subsection{Układ cyfrowy inkrementujący trzybitową nieujemną liczbę całkowitą}
-\includegraphics[scale=0.8]{2a}\\
-Układ składa się z 3 wejść reprezentujących 3 bitową liczbę całkowitą oraz 4 wyjść, z których to czwarte jest opcjonalne: reprezentuje ono flagę przeniesienia (carry flag). Najstarszy bit na wejściu i wyjściu znajduje się najniżej na wykresie.
-\newpage
+Dla każdego bitu wyjściowego sporządzono tablice Karnaugh'a (od bitu najstarszego do najmłodszego), gdzie bity wejściowe w kolejności starszeństwa to ABC:\\
+
+\includegraphics[scale=0.8]{2aKarnaugh}\\
+Następnie w Multisimie stworzono układ odpowiadający wyprowadzeniu i przetestowano go używając wyświetlacza siedmiosegmentowego:\\
+\includegraphics[scale=0.8]{2aBetter}\\
+
 
 
 \subsection{Minimalizacja funkcji metodą tablic Karnaugha}
 Zadaną funkcję logiczną przedstawiono w poniższej tabeli, a następnie zminimalizowano korzystając z metody Karnaugh'a. Wynik minimalizacji również znajduje się na poniższym zdjęciu:
 
 \centering
-\includegraphics[scale=0.15]{2bTable}
+\includegraphics{2bVog}\\
 \raggedright
 W MultiSimie swtworzono model bramki niezminimalizowanej oraz zminimalizowanej. Porównano je Logic Analyzerem i oceniono, że minimalizacja przebiegła pomyślnie:
 \includegraphics[width=\textwidth]{2b}
-\newpage
+
 
 \subsection{Transkoder czterobitowych cyfr}
 \centering

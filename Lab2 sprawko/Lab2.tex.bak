@@ -59,7 +59,7 @@
 \multicolumn{1}{|l|}{\textbf{Temat ćwiczenia}} 					& \textbf{Numer ćwiczenia}  \\
 \multicolumn{1}{|l|}{Minimalizacja i praktyczna realizacja złożonych funkcji logicznych}	& 2                         \\ \hline
 \multicolumn{1}{|l|}{\textbf{Wykonawca}}       & \textbf{Ocena}            \\
-\multicolumn{1}{|l|}{Marcin Przewięźlikowski}          &                           \\ \hline
+\multicolumn{1}{|l|}{Michał Sokół}          &                           \\ \hline
 \end{tabular}
 \end{table}
 
@@ -120,6 +120,9 @@ Dla każdego z 7 segmentów zrealizowano tablicę Karnaugh'a prezentującą poż
 \includegraphics[scale=1]{7seg/seg6circ}\\
 \raggedright
 
+Wszystkie obwody podłączono do wyświetlacza siedmiosegmentowego i przetestowano. Wyświetlacz wskazywał przewidywane cyfry:
+\centering
+\includegraphics[width=\textwidth]{7seg/7segall}
 
 
 \end{document}

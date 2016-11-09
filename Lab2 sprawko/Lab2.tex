@@ -50,32 +50,30 @@
 
 \begin{document}
 
-\begin{table}[]
+\begin{table}[H]
 \label{my-label}
-\begin{tabular}{|p{7.5cm}|p{7.5cm}|}
+\begin{tabular}[width=\textwidth]{|c|c|}
 \hline
 									           					&                           \\
 \includegraphics[height=3cm]{logo}             					& \textbf{Technika cyfrowa} \\ \hline
 \multicolumn{1}{|l|}{\textbf{Temat ćwiczenia}} 					& \textbf{Numer ćwiczenia}  \\
 \multicolumn{1}{|l|}{Minimalizacja i praktyczna realizacja złożonych funkcji logicznych}	& 2                         \\ \hline
 \multicolumn{1}{|l|}{\textbf{Wykonawca}}       & \textbf{Ocena}            \\
-\multicolumn{1}{|l|}{Marcin Przewięźlikowski}          &                           \\ \hline
+\multicolumn{1}{|l|}{Łukasz Nawojowski}          &                           \\ \hline
 \end{tabular}
 \end{table}
 
 \section{Cel ćwiczenia}
-
-
 Zapoznanie się z zastosowaniem tablic Karnaugh'a do minimalizacji graficznej złożonych funkcji logicznych oraz zaprojektowanie w Multisimie układu cyfrowego zwiększającego o 1 trzybitową liczbę całkowitą oraz wyświetlacza siedmiosegmentowego.
 
 \section{Przebieg ćwiczenia}
 
 \subsection{Układ cyfrowy inkrementujący trzybitową nieujemną liczbę całkowitą}
-\includegraphics[scale=0.8]{2a}\\
-Układ składa się z 3 wejść reprezentujących 3 bitową liczbę całkowitą oraz 4 wyjść, z których to czwarte jest opcjonalne: reprezentuje ono flagę przeniesienia (carry flag). Najstarszy bit na wejściu i wyjściu znajduje się najniżej na wykresie.
+\includegraphics[width=\textwidth]{7_bit_incr_karnaugh}
+\includegraphics[width=\textwidth]{2a}\\
+Układ składa się z trzech wejść reprezentujących 3-bitową liczbę całkowitą oraz czterech wyjść, z których to czwarte jest opcjonalne - reprezentuje ono flagę przeniesienia (carry flag). Najstarszy bit na wejściu i wyjściu znajduje się najniżej na wykresie.
+
 \newpage
-
-
 \subsection{Minimalizacja funkcji metodą tablic Karnaugha}
 Zadaną funkcję logiczną przedstawiono w poniższej tabeli, a następnie zminimalizowano korzystając z metody Karnaugh'a. Wynik minimalizacji również znajduje się na poniższym zdjęciu:
 

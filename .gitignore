@@ -1,1 +1,5 @@
 *(Security copy)
+*.aux
+*.log
+*.pdf
+*.synctex.gz

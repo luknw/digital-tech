@@ -1,0 +1,9 @@
+Zrobione, przejrzane:
+-
+
+Zrobione, do przejrzenia:
+a, b, c, d, e
+
+Do zrobienia:
+f, g, h
+

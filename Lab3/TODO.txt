@@ -1,9 +1,8 @@
 Zrobione, przejrzane:
--
+c, f, g
 
 Zrobione, do przejrzenia:
-a, b, c, d, e
+a, b, d, e, h
 
 Do zrobienia:
-f, g, h
 

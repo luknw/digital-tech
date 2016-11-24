@@ -1,3 +1,7 @@
 *(Security copy)
 .dropbox
 desktop.ini
+*.pdf
+*.aux
+*.log
+*.gz

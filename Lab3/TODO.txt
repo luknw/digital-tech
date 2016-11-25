@@ -1,7 +1,7 @@
 Zrobione, przejrzane:
-a, b, c, f, g
+a, b, c,  d, f, g, h
 
-Zrobione, do przejrzenia:
-d, e, h
+Do zrobienia na nowo:
+e
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.4.25)  25 NOV 2016 10:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.4.25)  25 NOV 2016 10:51
 entering extended mode
 **Lab3.tex
 (Lab3.tex
@@ -1458,261 +1458,134 @@ LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 51.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmtt.fd"
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
+<img/logo.jpg, id=4, 296.7888pt x 376.2858pt>
+File: img/logo.jpg Graphic file (type jpg)
+ <use img/logo.jpg>
+Package pdftex.def Info: img/logo.jpg used on input line 58.
+(pdftex.def)             Requested size: 67.32256pt x 85.35826pt.
 
-! LaTeX Error: File `img/logo' not found.
+<img/3a_karnaugh.png, id=5, 671.50874pt x 266.49562pt>
+File: img/3a_karnaugh.png Graphic file (type png)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.58 \includegraphics[height=3cm]{img/logo}
-                                                        					& \textbf{Techn...
+<use img/3a_karnaugh.png>
+Package pdftex.def Info: img/3a_karnaugh.png used on input line 73.
+(pdftex.def)             Requested size: 452.96782pt x 179.76698pt.
+ <img/3a.png, id=7, 961.34157pt x 408.02437pt>
+File: img/3a.png Graphic file (type png)
 
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use img/3a.png>
+Package pdftex.def Info: img/3a.png used on input line 77.
+(pdftex.def)             Requested size: 452.96782pt x 192.2571pt.
+ [1
 
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./img/logo.jpg> <./img/3a
+_karnaugh.png>]
+<img/3b.png, id=15, 694.9965pt x 485.4135pt>
+File: img/3b.png Graphic file (type png)
+ <use img/3b.png>
+Package pdftex.def Info: img/3b.png used on input line 85.
+(pdftex.def)             Requested size: 452.96782pt x 316.38162pt.
 
-! LaTeX Error: File `img/3a_karnaugh' not found.
+<img/3bTruthTable.png, id=16, 91.542pt x 141.52875pt>
+File: img/3bTruthTable.png Graphic file (type png)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73 ...raphics[width=\textwidth]{img/3a_karnaugh}
-                                                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use img/3bTruthTable.png>
+Package pdftex.def Info: img/3bTruthTable.png used on input line 90.
+(pdftex.def)             Requested size: 91.54178pt x 141.5284pt.
+ [2 <./img/3a.png> <./img/3b.png>]
+<img/3c_syncJK.png, id=22, 986.9372pt x 376.40625pt>
+File: img/3c_syncJK.png Graphic file (type png)
+ <use img/3c_syncJK.png>
+Package pdftex.def Info: img/3c_syncJK.png used on input line 102.
+(pdftex.def)             Requested size: 452.96782pt x 172.7584pt.
 
+<img/3cTruthTable.png, id=23, 152.36925pt x 81.30376pt>
+File: img/3cTruthTable.png Graphic file (type png)
 
-! LaTeX Error: File `img/3a' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.77 \includegraphics[width=\textwidth]{img/3a}
-                                               
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `img/3b' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.85 \includegraphics[width=\textwidth]{img/3b}
-                                               
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `img/3bTruthTable' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.90 \includegraphics{img/3bTruthTable}
-                                       
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `img/3c_syncJK' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.102 ...graphics[width=\textwidth]{img/3c_syncJK}
-                                                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `img/3cTruthTable' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.107 \includegraphics{img/3cTruthTable}
-                                        
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<use img/3cTruthTable.png>
+Package pdftex.def Info: img/3cTruthTable.png used on input line 107.
+(pdftex.def)             Requested size: 152.36887pt x 81.30354pt.
 LaTeX Font Info:    Try loading font information for TS1+lmr on input line 112.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [1
+) [3 <./img/3bTruthTable.png> <./img/3c_syncJK.png> <./img/3cTruthTable.png>]
+<img/3d.png, id=31, 632.96475pt x 334.851pt>
+File: img/3d.png Graphic file (type png)
+ <use img/3d.png>
+Package pdftex.def Info: img/3d.png used on input line 125.
+(pdftex.def)             Requested size: 135.89172pt x 71.88936pt.
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<img/3dTruthTable.png, id=32, 158.39175pt x 82.50826pt>
+File: img/3dTruthTable.png Graphic file (type png)
 
-! LaTeX Error: File `img/3d' not found.
+<use img/3dTruthTable.png>
+Package pdftex.def Info: img/3dTruthTable.png used on input line 129.
+(pdftex.def)             Requested size: 135.89172pt x 70.787pt.
+ <img/3f.png, id=33, 825.83531pt x 380.17032pt>
+File: img/3f.png Graphic file (type png)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.125 ...ludegraphics[width=0.3\textwidth]{img/3d}
-                                                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use img/3f.png>
+Package pdftex.def Info: img/3f.png used on input line 149.
+(pdftex.def)             Requested size: 452.96782pt x 208.52582pt.
+File: img/3dTruthTable.png Graphic file (type png)
+ <use img/3dTruthTable.png>
+Package pdftex.def Info: img/3dTruthTable.png used on input line 153.
+(pdftex.def)             Requested size: 135.89172pt x 70.787pt.
+ [4 <./img/3d.png> <./img/3dTruthTable.png>] <img/3g.png, id=40, 826.58812pt x 
+378.66469pt>
+File: img/3g.png Graphic file (type png)
+ <use img/3g.png>
+Package pdftex.def Info: img/3g.png used on input line 162.
+(pdftex.def)             Requested size: 452.96782pt x 207.50931pt.
 
+[5 <./img/3f.png> <./img/3g.png>]
+<img/3hPIPO.png, id=46, 1142.76938pt x 701.62125pt>
+File: img/3hPIPO.png Graphic file (type png)
+ <use img/3hPIPO.png>
+Package pdftex.def Info: img/3hPIPO.png used on input line 173.
+(pdftex.def)             Requested size: 452.96782pt x 278.10623pt.
 
-! LaTeX Error: File `img/3dTruthTable' not found.
+<img/3hSIPO.png, id=47, 1203.7472pt x 662.475pt>
+File: img/3hSIPO.png Graphic file (type png)
+ <use img/3hSIPO.png>
+Package pdftex.def Info: img/3hSIPO.png used on input line 180.
+(pdftex.def)             Requested size: 452.96782pt x 249.28674pt.
+ [6 <./img/3hPIPO.png>] <img/3hPISO.png, id=52, 1218.05063pt x 666.23906pt>
+File: img/3hPISO.png Graphic file (type png)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.129 ...cs[width=0.3\textwidth]{img/3dTruthTable}
-                                                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use img/3hPISO.png>
+Package pdftex.def Info: img/3hPISO.png used on input line 189.
+(pdftex.def)             Requested size: 452.96782pt x 247.755pt.
+ [7 <./img/3hSIPO.png>]
+<img/3hSISO.png, id=58, 1190.94937pt x 703.87968pt>
+File: img/3hSISO.png Graphic file (type png)
+ <use img/3hSISO.png>
+Package pdftex.def Info: img/3hSISO.png used on input line 202.
+(pdftex.def)             Requested size: 452.96782pt x 267.71335pt.
 
-
-! LaTeX Error: File `img/3f' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.149 \includegraphics[width=\textwidth]{img/3f}
-                                                
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `img/3dTruthTable' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.153 ...cs[width=0.3\textwidth]{img/3dTruthTable}
-                                                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `img/3g' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.162 \includegraphics[width=\textwidth]{img/3g}
-                                                
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[2]
-
-! LaTeX Error: File `img/3hPIPO' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.173 ...udegraphics[width=\textwidth]{img/3hPIPO}
-                                                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `img/3hSIPO' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.180 ...udegraphics[width=\textwidth]{img/3hSIPO}
-                                                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `img/3hPISO' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.189 ...udegraphics[width=\textwidth]{img/3hPISO}
-                                                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[3]
-
-! LaTeX Error: File `img/3hSISO' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.202 ...udegraphics[width=\textwidth]{img/3hSISO}
-                                                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+[8 <./img/3hPISO.png>]
 
 Package caption Warning: Unused \captionsetup[sub] on input line 39.
 See the caption package documentation for explanation.
 
-[4] (Lab3.aux) ) 
+[9 <./img/3hSISO.png>] (Lab3.aux) ) 
 Here is how much of TeX's memory you used:
- 32031 strings out of 493698
- 773645 string characters out of 3144409
- 822977 words of memory out of 3000000
- 34837 multiletter control sequences out of 15000+200000
+ 32081 strings out of 493698
+ 774800 string characters out of 3144409
+ 821977 words of memory out of 3000000
+ 34897 multiletter control sequences out of 15000+200000
  48714 words of font info for 46 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 62i,9n,77p,10388b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/P
-rogram Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pf
-b>
-Output written on Lab3.pdf (4 pages, 84084 bytes).
+ 62i,12n,77p,10388b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips
+/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/lm/lmri12.pfb>
+Output written on Lab3.pdf (9 pages, 997208 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
+ 81 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
 

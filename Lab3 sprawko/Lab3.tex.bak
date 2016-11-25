@@ -141,7 +141,7 @@ Przerzutnik D znajduje szerokie zastosowanie w budowie rejestrów.
 
 Przerzutnik typu T (eng. \textit{Toggle}), który po podaniu stanu wysokiego na wejście T i opadnięciu sygnału zegarowego zmienia stan wyjścia na przeciwny od dotychczasowego.
 
-Znajduje zastosowanie 
+Znajduje zastosowanie w układach dzielenia częstotliwości przez 2.
 
 \subsection{Przerzutnik D na podstawie synchronicznego przerzutnika JK}
 \begin{figure}[H]

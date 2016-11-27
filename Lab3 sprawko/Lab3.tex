@@ -90,7 +90,10 @@ Widzimy, że przerzutnik działa zgodnie z przewidywaniami. Przerzutnik oparty o
 \includegraphics{img/3bTruthTable}
 \end{figure}
 
-Synchroniczny przerzutnik RS zmienia stan swoich wyjść tylko, gdy wejście zegara jest w stanie wysokim
+Synchroniczny przerzutnik RS zmienia stan swoich wyjść tylko, gdy wejście zegara jest w stanie wysokim.
+
+Uzyskano go wiedząc, że działa on na takiej samej zasadzie jak przerzutnik asynchroniczny RS wtedy i tylko wtedy, gdy sygnał z zegara jest w stanie wysokim. W związku z tym odpowiednio na wejścia R i S przerzutnika asynchronicznego muszą być podane wartości RC i SC. Uzyskano je za pomocą bramek AND.
+
 
 Z analizy logic analyzerem widać, że zmontowany przerzutnik działa poprawnie. 
 
@@ -122,7 +125,7 @@ Ciekawostka: nazwa przerzutnika pochodzi od inicjałów  \textbf{Jacka Kilby'yeg
 \subsection{Przerzutnik D na podstawie asynchronicznego przerzutnika RS}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.3\textwidth]{img/3d}
+\includegraphics[width=\textwidth]{img/3d}
 \end{figure}
 \begin{figure}[H]
 \centering
@@ -131,13 +134,17 @@ Ciekawostka: nazwa przerzutnika pochodzi od inicjałów  \textbf{Jacka Kilby'yeg
 
 Nazwa przerzutnika pochodzi z j. angielskiego - od słowa \textit{data} lub \textit{delay}. Jest to układ opóźniający - przepisuje sygnał wejściowy, ale tylko przy odpowiednim sygnale zegara. Jest to zatem także układ synchroniczny.
 
-Przerzutnik D znajduje szerokie zastosowanie w budowie rejestrów.
+Przerzutnik D znajduje szerokie zastosowanie w budowie rejestrów (więcej o rejestrach poniżej)
 
 \subsection{Przerzutnik T na podstawie synchronicznego przerzutnika D}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width=0.3\textwidth]{7seg/seg1}
-%\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/3e}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics{img/3eTruthTable}
+\end{figure}
 
 Przerzutnik typu T (eng. \textit{Toggle}), który po podaniu stanu wysokiego na wejście T i opadnięciu sygnału zegarowego zmienia stan wyjścia na przeciwny od dotychczasowego.
 
@@ -207,6 +214,6 @@ Do każdego wejścia równoległego oprócz pierwszego dodajemy taki multiplekse
 
 
 \section{Wnioski}
-Dzięki temu ćwiczeniu dowiedzieliśmy się, jak przerzutniki mogą posłużyć ku wyjściu na kolejny poziom abstrakcji - do zbudowania rejestrów, skąd już tylko niewielki krok do asemblera i języków wysokiego poziomu.
+Dzięki temu ćwiczeniu dowiedzieliśmy się, jak przerzutniki mogą posłużyć do zbudowania rejestrów, które są integralnymi częściami mikrokontrolerów oraz procesorów, tak istotnych w naszym obszarze działań. Stąd już mały krok do asemblera, a później do języków wysokiego poziomu.
 
 \end{document}

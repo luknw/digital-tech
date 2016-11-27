@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.4.25)  25 NOV 2016 10:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.4.25)  25 NOV 2016 14:32
 entering extended mode
 **Lab3.tex
 (Lab3.tex
@@ -1486,26 +1486,26 @@ File: img/3b.png Graphic file (type png)
 Package pdftex.def Info: img/3b.png used on input line 85.
 (pdftex.def)             Requested size: 452.96782pt x 316.38162pt.
 
-<img/3bTruthTable.png, id=16, 91.542pt x 141.52875pt>
+<img/3bTruthTable.png, id=16, 88.53075pt x 135.50626pt>
 File: img/3bTruthTable.png Graphic file (type png)
 
 <use img/3bTruthTable.png>
 Package pdftex.def Info: img/3bTruthTable.png used on input line 90.
-(pdftex.def)             Requested size: 91.54178pt x 141.5284pt.
+(pdftex.def)             Requested size: 88.5305pt x 135.5059pt.
  [2 <./img/3a.png> <./img/3b.png>]
 <img/3c_syncJK.png, id=22, 986.9372pt x 376.40625pt>
 File: img/3c_syncJK.png Graphic file (type png)
  <use img/3c_syncJK.png>
-Package pdftex.def Info: img/3c_syncJK.png used on input line 102.
+Package pdftex.def Info: img/3c_syncJK.png used on input line 105.
 (pdftex.def)             Requested size: 452.96782pt x 172.7584pt.
 
 <img/3cTruthTable.png, id=23, 152.36925pt x 81.30376pt>
 File: img/3cTruthTable.png Graphic file (type png)
 
 <use img/3cTruthTable.png>
-Package pdftex.def Info: img/3cTruthTable.png used on input line 107.
+Package pdftex.def Info: img/3cTruthTable.png used on input line 110.
 (pdftex.def)             Requested size: 152.36887pt x 81.30354pt.
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 112.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 115.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1513,79 +1513,92 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 <img/3d.png, id=31, 632.96475pt x 334.851pt>
 File: img/3d.png Graphic file (type png)
  <use img/3d.png>
-Package pdftex.def Info: img/3d.png used on input line 125.
-(pdftex.def)             Requested size: 135.89172pt x 71.88936pt.
+Package pdftex.def Info: img/3d.png used on input line 128.
+(pdftex.def)             Requested size: 452.96782pt x 239.63635pt.
 
 <img/3dTruthTable.png, id=32, 158.39175pt x 82.50826pt>
 File: img/3dTruthTable.png Graphic file (type png)
 
 <use img/3dTruthTable.png>
-Package pdftex.def Info: img/3dTruthTable.png used on input line 129.
+Package pdftex.def Info: img/3dTruthTable.png used on input line 132.
 (pdftex.def)             Requested size: 135.89172pt x 70.787pt.
- <img/3f.png, id=33, 825.83531pt x 380.17032pt>
-File: img/3f.png Graphic file (type png)
+ <img/3e.png, id=33, 694.84593pt x 292.09125pt>
+File: img/3e.png Graphic file (type png)
 
-<use img/3f.png>
-Package pdftex.def Info: img/3f.png used on input line 149.
+<use img/3e.png>
+Package pdftex.def Info: img/3e.png used on input line 142.
+(pdftex.def)             Requested size: 452.96782pt x 190.4097pt.
+ <img/3eTruthTable.png, id=34, 103.587pt x 48.18pt>
+File: img/3eTruthTable.png Graphic file (type png)
+
+<use img/3eTruthTable.png>
+Package pdftex.def Info: img/3eTruthTable.png used on input line 146.
+(pdftex.def)             Requested size: 103.58675pt x 48.17986pt.
+ [4 <./img/3d.png> <./img/3dTruthTable.png>]
+<img/3f.png, id=41, 825.83531pt x 380.17032pt>
+File: img/3f.png Graphic file (type png)
+ <use img/3f.png>
+Package pdftex.def Info: img/3f.png used on input line 156.
 (pdftex.def)             Requested size: 452.96782pt x 208.52582pt.
 File: img/3dTruthTable.png Graphic file (type png)
- <use img/3dTruthTable.png>
-Package pdftex.def Info: img/3dTruthTable.png used on input line 153.
+
+<use img/3dTruthTable.png>
+Package pdftex.def Info: img/3dTruthTable.png used on input line 160.
 (pdftex.def)             Requested size: 135.89172pt x 70.787pt.
- [4 <./img/3d.png> <./img/3dTruthTable.png>] <img/3g.png, id=40, 826.58812pt x 
-378.66469pt>
+ [5 <./img/3e.png> <./img/3eTruthTable.png> <./img/3f.png>] <img/3g.png, id=48,
+ 826.58812pt x 378.66469pt>
 File: img/3g.png Graphic file (type png)
  <use img/3g.png>
-Package pdftex.def Info: img/3g.png used on input line 162.
+Package pdftex.def Info: img/3g.png used on input line 169.
 (pdftex.def)             Requested size: 452.96782pt x 207.50931pt.
 
-[5 <./img/3f.png> <./img/3g.png>]
-<img/3hPIPO.png, id=46, 1142.76938pt x 701.62125pt>
+<img/3hPIPO.png, id=49, 1142.76938pt x 701.62125pt>
 File: img/3hPIPO.png Graphic file (type png)
  <use img/3hPIPO.png>
-Package pdftex.def Info: img/3hPIPO.png used on input line 173.
+Package pdftex.def Info: img/3hPIPO.png used on input line 180.
 (pdftex.def)             Requested size: 452.96782pt x 278.10623pt.
 
-<img/3hSIPO.png, id=47, 1203.7472pt x 662.475pt>
+[6 <./img/3g.png>] <img/3hSIPO.png, id=54, 1203.7472pt x 662.475pt>
 File: img/3hSIPO.png Graphic file (type png)
- <use img/3hSIPO.png>
-Package pdftex.def Info: img/3hSIPO.png used on input line 180.
+
+<use img/3hSIPO.png>
+Package pdftex.def Info: img/3hSIPO.png used on input line 187.
 (pdftex.def)             Requested size: 452.96782pt x 249.28674pt.
- [6 <./img/3hPIPO.png>] <img/3hPISO.png, id=52, 1218.05063pt x 666.23906pt>
+ [7 <./img/3hPIPO.png>]
+<img/3hPISO.png, id=60, 1218.05063pt x 666.23906pt>
 File: img/3hPISO.png Graphic file (type png)
-
-<use img/3hPISO.png>
-Package pdftex.def Info: img/3hPISO.png used on input line 189.
+ <use img/3hPISO.png>
+Package pdftex.def Info: img/3hPISO.png used on input line 196.
 (pdftex.def)             Requested size: 452.96782pt x 247.755pt.
- [7 <./img/3hSIPO.png>]
-<img/3hSISO.png, id=58, 1190.94937pt x 703.87968pt>
-File: img/3hSISO.png Graphic file (type png)
- <use img/3hSISO.png>
-Package pdftex.def Info: img/3hSISO.png used on input line 202.
-(pdftex.def)             Requested size: 452.96782pt x 267.71335pt.
 
-[8 <./img/3hPISO.png>]
+[8 <./img/3hSIPO.png>] <img/3hSISO.png, id=65, 1190.94937pt x 703.87968pt>
+File: img/3hSISO.png Graphic file (type png)
+
+<use img/3hSISO.png>
+Package pdftex.def Info: img/3hSISO.png used on input line 209.
+(pdftex.def)             Requested size: 452.96782pt x 267.71335pt.
+ [9 <./img/3hPISO.png>]
 
 Package caption Warning: Unused \captionsetup[sub] on input line 39.
 See the caption package documentation for explanation.
 
-[9 <./img/3hSISO.png>] (Lab3.aux) ) 
+[10 <./img/3hSISO.png>] (Lab3.aux) ) 
 Here is how much of TeX's memory you used:
- 32081 strings out of 493698
- 774800 string characters out of 3144409
- 821977 words of memory out of 3000000
- 34897 multiletter control sequences out of 15000+200000
+ 32091 strings out of 493698
+ 774980 string characters out of 3144409
+ 820977 words of memory out of 3000000
+ 34905 multiletter control sequences out of 15000+200000
  48714 words of font info for 46 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  62i,12n,77p,10388b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips
-/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/lm/lmri12.pfb>
-Output written on Lab3.pdf (9 pages, 997208 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvip
+s/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/lm/lmri12.pfb>
+Output written on Lab3.pdf (10 pages, 1027970 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
+ 88 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 88 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 

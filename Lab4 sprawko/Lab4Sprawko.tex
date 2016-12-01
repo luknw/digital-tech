@@ -115,6 +115,41 @@ W związku z tym wystarczy na wejście K podać sygnał wyjściowy (Q), a na wej
 
 \section{Czterobitowy licznik asynchroniczny}
 
+Do budowy czterobitowego licznika użyto dwójek liczących stworzonych za pomocą przerzutników typu T ze stale podanym na wejście T sygnałem dodatnim. Sprawia to, że przerzutniki reagują zmianą sygnału wyjściowego na wzrastający sygnał zegara.
+\par
+Tym sposobem każdy licznik dzieli częstotliwość sygnału otrzymywanego na wyjściu C przez 2. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/4b_wzrost}
+\end{figure}
+
+Zauważono następującą zależność sygnałów na wyjściu od liczby sygnałów z zegara na wejściu:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/4b_wzrost_table}
+\end{figure}
+
+- liczba na wyjściu jest równa 16 - (liczba sygnałów z zegara mod 16)
+\par
+\par 
+Zrealizowano także układ w oparciu o dwójki liczące reagujące na sygnał opadający z zegara. W tym celu na wejście każdego z przerzutników T w układzie dodano bramkę NOT. 
+Wtedy, gdy na wejściu bramki NOT jest sygnał opadający, podaje ona sygnał wzrastający na wejście przerzutnika T, na który ten reaguje. Efektywnie Układ NOT-T zachowuje się jak bramka T reagująca na sygnał opadający. Tak działająca bramka T również dzieli częstotliwość podanego sygnału przez 2.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/4b_opad}
+\end{figure}
+
+Zauważono następującą zależność sygnałów na wyjściu od liczby sygnałów z zegara na wejściu:
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/4b_opad_table}
+\end{figure}
+
+Widać zatem, że liczba na wyjściu jest równa liczbie sygnałów z zegara mod 16.
+
 \section{Licznik mod 8}
 
 \section{Licznik mod 6}

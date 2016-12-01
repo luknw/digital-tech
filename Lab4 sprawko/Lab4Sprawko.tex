@@ -80,29 +80,38 @@ Dwójka licząca służy do dzielenia częstotliwości sygnału wejściowego prz
 
 
 
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width=\textwidth]{img/3a_karnaugh}
-%\end{figure}
-%\begin{figure}[H]
-%\centering
-%\includegraphics[width=\textwidth]{img/3a}
-%\end{figure}
-
+\begin{figure}[H]
+\centering
+\includegraphics{img/4a_table}
+\end{figure}
 
 Uzyskano ją na dwa sposoby:
 
-\subsection{Przerzutnik D}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/4a}
+\end{figure}
 
+\subsection{Przerzutnik D}
+\begin{figure}[H]
+\centering
+\includegraphics{img/4a_table_d}
+\end{figure}
 Chcemy, aby wartość logiczna Q zmieniała się na przeciwną niż dotychczasowa tylko, gdy sygnał zegara jest wzrastający.
 
 Właściwości przerzutnika D, pozwalają na uzyskanie zmiany wartości wyjścia na wartość podaną na wejście D tylko, gdy sygnał zegara jest wzrastający. Jak jednak uzyskać zmianę sygnału na wręcz przeciwny? 
-Na wejście D trzeba podać zanegowanie obecnej wartości sygnału Q - czyli ~Q.
-
-
+Na wejście D trzeba podać zanegowanie obecnej wartości sygnału Q - czyli -Q.
 
 \subsection{Przerzutnik JK}
 
+\begin{figure}[H]
+\centering
+\includegraphics{img/4a_table_jk}
+\end{figure}
+
+Wyjście przerzutnika JK zmienia swój stan tylko wtedy, gdy sygnał zegara jest wzrastający. Ponadto, sygnał wyjściowy jest ustawiany zawsze na wartość wejścia J, gdy na wejścia J i K są podane przeciwne sygnały. 
+
+W związku z tym wystarczy na wejście K podać sygnał wyjściowy (Q), a na wejście J - zanegowany sygnał wyjściowy (-Q). Mamy wtedy gwarancję, że sygnał przerzutnika zmieni się na wartość przeciwną do dotychczasowej.
 
 \section{Czterobitowy licznik asynchroniczny}
 

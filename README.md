@@ -1,3 +1,3 @@
 Cześć Przewięźl, mogę być pracownikiem miesiąca?
 
-Pracownik miesiąca: `Łukasz Nawojowski`
+Pracownik miesiąca: `Marcin Przewięźlikowski`

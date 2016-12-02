@@ -167,21 +167,32 @@ Rozważmy tabelę prawdy dla każdego z wyjść licznika:
 \includegraphics{img/4c_table}
 \end{figure}
 
-Można zatem zauważyć, że:
-\par
-Wyjście Qa zmienia swój stan na przeciwny po każdym impulsie zegarowym.
-\par
-Wyjście Qb zmienia swój stan na przeciwny po sygnale zegarowym, w czasie którego wyjście Qa było w stanie wysokim.
-\par 
-Wyjście Qc zmienia stan na przeciwny, gdy w poprzednim cyklu licznika wyjścia Qa i Qb jednocześnie były w stanie wysokim.
-\par 
-
-Do budowy wyjść Qa, Qb, Qc będzie zatem najłatwiej użyć przerzutników T reagujących na wzrastający sygnał zegara.
-Na wejście T przerzutnika Qa podamy stały sygnał wysoki. Na wejście T przerzutnika Qb podamy sygnał wyjściowy przerzutnika Qa (dzięki temu Qb będzie zmieniał sygnał tylko, gdy wyjście Qa jest dodatnie). Zaś na wejście T przerzutnika Qc podamy sygnały z wyjść Qa i Qb połączone bramką AND - dzięki temu Qc będzie zmieniać sygnał tylko, gdy sygnały Qa i Qb są dodatnie. Dzięki temu Na wyjściu otrzymamy liczbę sygnałów pozytywnych z zegara modulo 8:
+Na tej podstawie można stworzyć tabele Karnaugh'a dla funkcji logicznych sterujących przerzutnikami D.
+Przypomnijmy, że wyjście przerzutnika D przyjmuje wartość sygnału podanego na wejście D, gdy na wejście zegarowe podany jest sygnał wysoki.
+W poniższych tabelach przez Qc, Qb i Qa rozumiemy wartości tych wyjść przy poprzednim sygnale zegara:
+ 
 
 \begin{figure}[H]
 \centering
-\includegraphics{img/4c}
+\includegraphics{img/4c_table_qc}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics{img/4c_table_qb}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics{img/4c_table_qa}
+\end{figure}
+
+Na podstawie uzyskanych funkcji logicznych zrealizowano następujący układ, w którym wejścia D przerzutników są sterowane uzyskanymi funkcjami:
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/4c}
 \end{figure}
 
 

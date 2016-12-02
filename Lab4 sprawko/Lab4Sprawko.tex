@@ -195,9 +195,22 @@ Na podstawie uzyskanych funkcji logicznych zrealizowano następujący układ, w 
 \includegraphics[width=\textwidth]{img/4c}
 \end{figure}
 
-
-
 \section{Synchroniczny licznik mod 6}
+Mając synchroniczny licznik mod 8, zrealizowanie licznika mod 6 nie jest dużym wyzwaniem. Zgodnie z tabelą prawdy dla tego licznika:
+
+\begin{figure}[H]
+\centering
+\includegraphics{img/4d_table}
+\end{figure}
+
+Wszystkie przerzutniki muszą zostać wyzerowane, gdy na wyjściach Qc i Qb pojawią się sygnały dodatnie. Aby to zrealizować, do schematu licznika modulo 8 dodano małą modyfikację - zerowanie przerzutników sygnałem z bramki AND łączącej Qc i Qb:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/4d}
+\end{figure}
+
+
 
 
 

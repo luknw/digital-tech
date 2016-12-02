@@ -137,6 +137,7 @@ Zauważono następującą zależność sygnałów na wyjściu od liczby sygnał�
 Zrealizowano także układ w oparciu o dwójki liczące reagujące na sygnał opadający z zegara. W tym celu na wejście każdego z przerzutników T w układzie dodano bramkę NOT. 
 Wtedy, gdy na wejściu bramki NOT jest sygnał opadający, podaje ona sygnał wzrastający na wejście przerzutnika T, na który ten reaguje. Efektywnie Układ NOT-T zachowuje się jak bramka T reagująca na sygnał opadający. Tak działająca bramka T również dzieli częstotliwość podanego sygnału przez 2.
 
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{img/4b_opad}
@@ -150,9 +151,42 @@ Zauważono następującą zależność sygnałów na wyjściu od liczby sygnał�
 
 Widać zatem, że liczba na wyjściu jest równa liczbie sygnałów z zegara mod 16.
 
-\section{Licznik mod 8}
+\par
+Licznik ten nazywamy asynchronicznym, gdyż jego wyjście nie ustala się równocześnie z wejściem, lecz zależy od czasu propagacji sygnału w składowych przerzutnikach. Nie jest to dobre rozwiązanie - jeśli przerzutniki mają duży czas propagacji sygnału, licznik może "gubić" niektóre bity wyjścia lub też po prostu podawać niewłaściwy ich zestaw.
 
-\section{Licznik mod 6}
+\section{Synchroniczny licznik mod 8}
+
+Liczniki synchroniczne rozwiązują problem liczników asynchronicznych - sygnał zegara jest podawany na każdy z przerzutników osobno, zatem redukuje się czas opóźnień.
+
+Ponieważ licznik jest modulo 8, to wystarczy, by jego wyjście było 3-bitowe.
+
+Rozważmy tabelę prawdy dla każdego z wyjść licznika:
+
+\begin{figure}[H]
+\centering
+\includegraphics{img/4c_table}
+\end{figure}
+
+Można zatem zauważyć, że:
+\par
+Wyjście Qa zmienia swój stan na przeciwny po każdym impulsie zegarowym.
+\par
+Wyjście Qb zmienia swój stan na przeciwny po sygnale zegarowym, w czasie którego wyjście Qa było w stanie wysokim.
+\par 
+Wyjście Qc zmienia stan na przeciwny, gdy w poprzednim cyklu licznika wyjścia Qa i Qb jednocześnie były w stanie wysokim.
+\par 
+
+Do budowy wyjść Qa, Qb, Qc będzie zatem najłatwiej użyć przerzutników T reagujących na wzrastający sygnał zegara.
+Na wejście T przerzutnika Qa podamy stały sygnał wysoki. Na wejście T przerzutnika Qb podamy sygnał wyjściowy przerzutnika Qa (dzięki temu Qb będzie zmieniał sygnał tylko, gdy wyjście Qa jest dodatnie). Zaś na wejście T przerzutnika Qc podamy sygnały z wyjść Qa i Qb połączone bramką AND - dzięki temu Qc będzie zmieniać sygnał tylko, gdy sygnały Qa i Qb są dodatnie. Dzięki temu Na wyjściu otrzymamy liczbę sygnałów pozytywnych z zegara modulo 8:
+
+\begin{figure}[H]
+\centering
+\includegraphics{img/4c}
+\end{figure}
+
+
+
+\section{Synchroniczny licznik mod 6}
 
 
 

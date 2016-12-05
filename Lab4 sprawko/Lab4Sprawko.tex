@@ -131,7 +131,7 @@ Zauważono następującą zależność sygnałów na wyjściu od liczby sygnał�
 \includegraphics[width=\textwidth]{img/4b_wzrost_table}
 \end{figure}
 
-- liczba na wyjściu jest równa 16 - (liczba sygnałów z zegara mod 16)
+- liczba na wyjściu jest równa 16 - (liczba sygnałów z zegara mod 16) - a więc jest to licznik liczący w tył.
 \par
 \par 
 Zrealizowano także układ w oparciu o dwójki liczące reagujące na sygnał opadający z zegara. W tym celu na wejście każdego z przerzutników T w układzie dodano bramkę NOT. 
@@ -149,7 +149,7 @@ Zauważono następującą zależność sygnałów na wyjściu od liczby sygnał�
 \includegraphics[width=\textwidth]{img/4b_opad_table}
 \end{figure}
 
-Widać zatem, że liczba na wyjściu jest równa liczbie sygnałów z zegara mod 16.
+Widać zatem, że liczba na wyjściu jest równa liczbie sygnałów z zegara mod 16 - jest to licznik liczący w przód.
 
 \par
 Licznik ten nazywamy asynchronicznym, gdyż jego wyjście nie ustala się równocześnie z wejściem, lecz zależy od czasu propagacji sygnału w składowych przerzutnikach. Nie jest to dobre rozwiązanie - jeśli przerzutniki mają duży czas propagacji sygnału, licznik może "gubić" niektóre bity wyjścia lub też po prostu podawać niewłaściwy ich zestaw.
@@ -211,7 +211,16 @@ Wszystkie przerzutniki muszą zostać wyzerowane, gdy na wyjściach Qc i Qb poja
 \end{figure}
 
 
+\section{Synchroniczny licznik mod (dowolna 3-bitowa liczba)}
 
+Wykorzystując zasadę działania licznika mod 6, zrealizowano licznik, który zwraca resztę z dzielenia liczby taktów zegara przez dowolną 3-bitową liczbę. Wykorzystano do tego 3 bramki XNOR połączone bramką AND3, które efektywnie zwracają wartość logiczną 1, gdy odpowiednie podane na ich wejścia pary bitów są sobie równe. Dzięki temu można zerować przerzutniki D, gdy osiągniemy wybraną przez nas liczbę. Licznik przetestowano wyświetlaczami siedmiosegmentowymi i stwierdzono jego poprawne działanie. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/4extra}
+\end{figure}
+
+Konstrukcja ta jest mniej optymalna jeśli chodzi o wykorzystaną liczbę bramek logicznych od liczników z odgórnie zdefiniowaną liczbą, przez którą dzielą - jest ona jednak ogólniejsza w swoim działaniu.
 
 
 

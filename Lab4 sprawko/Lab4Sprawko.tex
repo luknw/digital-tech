@@ -1,4 +1,3 @@
-
 \documentclass[12pt,a4paper]{article}
 
 \usepackage[utf8]{inputenc}
@@ -14,11 +13,9 @@
 \usepackage{lmodern}	%fancy font
 \usepackage{textcomp}
 
-\usepackage{indentfirst}
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
-%\usepackage{siunitx}
 \usepackage{here}
 
 
@@ -40,7 +37,6 @@
 %\usepackage{siunitx}
 \usepackage{here}
 \usepackage[margin=1in]{geometry}% Just for this example
-\setlength{\parindent}{0pt}% Just for this example
 \setlength{\textheight}{24cm}
 \setlength{\textwidth}{15.92cm}
 \setlength{\footskip}{10mm}
@@ -58,101 +54,44 @@
 									           					&                           \\
 \includegraphics[height=3cm]{logo}             					& \textbf{Technika cyfrowa} \\ \hline
 \multicolumn{1}{|l|}{\textbf{Temat ćwiczenia}} 					& \textbf{Numer ćwiczenia}  \\
-\multicolumn{1}{|l|}{Liczniki}	& 2                         \\ \hline
+\multicolumn{1}{|l|}{Liczniki}	& 4                         \\ \hline
 \multicolumn{1}{|l|}{\textbf{Wykonawca}}       & \textbf{Ocena}            \\
-\multicolumn{1}{|l|}{Marcin Przewięźlikowski}          &                           \\ \hline
+\multicolumn{1}{|l|}{Łukasz Nawojowski}          &                           \\ \hline
 \end{tabular}
 \end{table}
 
 \section{Cel ćwiczenia}
-
-Zapoznanie się z zastosowaniem przerzutników w budowaniu liczników synchronicznych oraz asynchronicznych. Zbadanie działania liczników czterobitowych.
+Zaznajomienie się ze sposobami konstrukcji liczników przy użyciu przerzutników i bramek logicznych.
 
 \section{Dwójka licząca}
-
-
-Dwójka licząca służy do dzielenia częstotliwości sygnału wejściowego przez 2. Uzyskano ją na dwa sposoby:
-
-\subsection{Przerzutnik D}
-
-
-Dwójka licząca służy do dzielenia częstotliwości sygnału wejściowego przez 2. Oto jej tabela prawdy:
-
-
-
+Sporządzono tablice Karnaugh dla obu wersji licznika.
 \begin{figure}[H]
 \centering
-\includegraphics{img/4a_table}
+\includegraphics[width=\textwidth]{img/4a_tables}
 \end{figure}
 
-Uzyskano ją na dwa sposoby:
-
+\newpage
+Zbudowano odpowiadające im układy w Multisimie.
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{img/4a}
+\includegraphics[width=\textwidth]{img/4a_circuit}
 \end{figure}
 
-\subsection{Przerzutnik D}
-\begin{figure}[H]
-\centering
-\includegraphics{img/4a_table_d}
-\end{figure}
-Chcemy, aby wartość logiczna Q zmieniała się na przeciwną niż dotychczasowa tylko, gdy sygnał zegara jest wzrastający.
+Zaobserwowano prawidłowe działanie układów. Widzimy, że wyjście dwójki liczącej też jest zegarem, tyle że z okresem dwa razy dłuższym niż wejściowy, z czego skorzystamy przy budowie licznika asynchronicznego.
 
-Właściwości przerzutnika D, pozwalają na uzyskanie zmiany wartości wyjścia na wartość podaną na wejście D tylko, gdy sygnał zegara jest wzrastający. Jak jednak uzyskać zmianę sygnału na wręcz przeciwny? 
-Na wejście D trzeba podać zanegowanie obecnej wartości sygnału Q - czyli -Q.
-
-\subsection{Przerzutnik JK}
-
-\begin{figure}[H]
-\centering
-\includegraphics{img/4a_table_jk}
-\end{figure}
-
-Wyjście przerzutnika JK zmienia swój stan tylko wtedy, gdy sygnał zegara jest wzrastający. Ponadto, sygnał wyjściowy jest ustawiany zawsze na wartość wejścia J, gdy na wejścia J i K są podane przeciwne sygnały. 
-
-W związku z tym wystarczy na wejście K podać sygnał wyjściowy (Q), a na wejście J - zanegowany sygnał wyjściowy (-Q). Mamy wtedy gwarancję, że sygnał przerzutnika zmieni się na wartość przeciwną do dotychczasowej.
 
 \section{Czterobitowy licznik asynchroniczny}
+Przy budowie licznika czterobitowego skorzystałem z przerzutników T, których poznana wcześniej zasada działania wydała mi się optymalna do tego celu. Jeden przerzutnik odpowiada jednemu bitowi wyjścia. Korzystając z zaobserwowanego wcześniej faktu, że dwójka licząca daje sygnał zegarowy o okresie 2 razy dłuższym niż wejściowy, a każdy kolejny bit powinien przeskakiwać z 2 razy mniejszą częstotliwością niż poprzedni, aby uzyskać ten efekt, wystarczy połączyć wyjście każdego kolejnego przerzutnika z wejściem zegarowym kolejnego.
 
-Do budowy czterobitowego licznika użyto dwójek liczących stworzonych za pomocą przerzutników typu T ze stale podanym na wejście T sygnałem dodatnim. Sprawia to, że przerzutniki reagują zmianą sygnału wyjściowego na wzrastający sygnał zegara.
-\par
-Tym sposobem każdy licznik dzieli częstotliwość sygnału otrzymywanego na wyjściu C przez 2. 
-
+Na tej podstawie zbudowano układ w Multisimie.
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{img/4b_wzrost}
+\includegraphics[width=\textwidth]{img/4b_circuit}
 \end{figure}
 
-Zauważono następującą zależność sygnałów na wyjściu od liczby sygnałów z zegara na wejściu:
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{img/4b_wzrost_table}
-\end{figure}
-
-- liczba na wyjściu jest równa 16 - (liczba sygnałów z zegara mod 16)
-\par
-\par 
-Zrealizowano także układ w oparciu o dwójki liczące reagujące na sygnał opadający z zegara. W tym celu na wejście każdego z przerzutników T w układzie dodano bramkę NOT. 
-Wtedy, gdy na wejściu bramki NOT jest sygnał opadający, podaje ona sygnał wzrastający na wejście przerzutnika T, na który ten reaguje. Efektywnie Układ NOT-T zachowuje się jak bramka T reagująca na sygnał opadający. Tak działająca bramka T również dzieli częstotliwość podanego sygnału przez 2.
+Widzimy, że kolejne bity
 
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{img/4b_opad}
-\end{figure}
-
-Zauważono następującą zależność sygnałów na wyjściu od liczby sygnałów z zegara na wejściu:
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{img/4b_opad_table}
-\end{figure}
-
-Widać zatem, że liczba na wyjściu jest równa liczbie sygnałów z zegara mod 16.
-
-\par
-Licznik ten nazywamy asynchronicznym, gdyż jego wyjście nie ustala się równocześnie z wejściem, lecz zależy od czasu propagacji sygnału w składowych przerzutnikach. Nie jest to dobre rozwiązanie - jeśli przerzutniki mają duży czas propagacji sygnału, licznik może "gubić" niektóre bity wyjścia lub też po prostu podawać niewłaściwy ich zestaw.
 
 \section{Synchroniczny licznik mod 8}
 

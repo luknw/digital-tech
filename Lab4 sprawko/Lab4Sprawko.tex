@@ -89,69 +89,46 @@ Na tej podstawie zbudowano układ w Multisimie.
 \includegraphics[width=\textwidth]{img/4b_circuit}
 \end{figure}
 
-Widzimy, że kolejne bity
+Widzimy, że kolejne bity zmieniają się z 2 razy mniejszą częstością, a na ekranach pojawiają się kolejne cyfry (całkowite wskazanie licznika to suma liczb na obu ekranach), jednak licznik odlicza w dół. Aby to zmienić, wystarczy zanegować wejścia zegarowe każdego przerzutnika. O ile w przypadku najmłodszego bitu spowoduje to jedynie przesunięcie sygnału wyjściowego o połowę okresu, to w przypadku bitów starszych zmiana ma trochę inny charakter.
+
+Po pierwsze, przerzutniki były wszystkie w tej samej pozycji początkowej 0. Początkowa zmiana najmłodszego bitu z 0 na 1 powodowała kaskadowe ustawienie wszystkich pozostałych bitów na 1. Po zanegowaniu sygnału zegarowego na każdym przerzutniku na samym początku zmienia się tylko bit najmłodszy, reszta pozostaje w pozycji 0, bo starsze bity reagują teraz na opadanie sygnału.
+
+Po drugie, rozważmy 2 bity, starszy i młodszy, ustawione na 1. Jeśli starszy bit reaguje na zmianę młodszego bitu z 0 na 1 i opada wtedy na 0, to sumaryczne wskazanie licznika maleje, ponieważ opadający starszy bit ma 2 razy większą wartość niż wznoszący się bit młodszy. Odpowiada to licznikowi bez zanegowanych wejść zegarowych. Jeśli z kolei weźmiemy te bity oba ustawione na 0 i starszy bit reaguje na opadanie młodszego bitu z 1 na 0, to przy zmianie sumaryczne wskazanie licznika rośnie, bo wznoszący się starszy bit ma 2 razy większą wartość niż opadający bit młodszy, co odpowiada licznikowi z zanegowanymi wejściami zegarowymi. Przetestowano również tę drugą wersję licznika, która rzeczywiście liczy rosnąco.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/4b_circuit2}
+\end{figure}
+
+Podczas niektórych zmian cyfry na wyświetlaczu mrugały, co może mieć związek z tym, że sygnał propaguje się ze skończoną szybkością od najmłodszego do najstarszego bitu, co może generować pewne chwile, w których licznik jako całość przechodzi z jednego stanu w drugi.
 
 
-
+\newpage
 \section{Synchroniczny licznik mod 8}
-
-Liczniki synchroniczne rozwiązują problem liczników asynchronicznych - sygnał zegara jest podawany na każdy z przerzutników osobno, zatem redukuje się czas opóźnień.
-
-Ponieważ licznik jest modulo 8, to wystarczy, by jego wyjście było 3-bitowe.
-
-Rozważmy tabelę prawdy dla każdego z wyjść licznika:
+$8 = 2^3$, zatem licznik będzie miał 3 wyjścia. Zauważmy, że wartości kolejnych starszych bitów zależą jedynie od swojej poprzedniej wartości oraz wartości bitów młodszych. Wyjście nie zależy również od sygnału zegarowego, który pełni jedynie rolę synchronizatora, co można już było zaobserwować przy budowie licznika mod 2. Na tej podstawie sporządzono tabele Karnaugh dla poszczególnych bitów, przy czym bit najmłodszy, to po prostu zwykły licznik mod 2.
 
 \begin{figure}[H]
 \centering
-\includegraphics{img/4c_table}
+\includegraphics[width=\textwidth]{img/4c_tables}
 \end{figure}
 
-Na tej podstawie można stworzyć tabele Karnaugh'a dla funkcji logicznych sterujących przerzutnikami D.
-Przypomnijmy, że wyjście przerzutnika D przyjmuje wartość sygnału podanego na wejście D, gdy na wejście zegarowe podany jest sygnał wysoki.
-W poniższych tabelach przez Qc, Qb i Qa rozumiemy wartości tych wyjść przy poprzednim sygnale zegara:
- 
+Na tej podstawie zbudowano układ w Multisimie.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/4c_circuit}
+\end{figure}
+
+I znów widzimy znajomy już układ sygnałów, co jest niechybną oznaką, że układ działa zgodnie z oczekiwaniami. Ten licznik jest synchroniczny, co pozwala na ustabilizowanie działania, jednak odbywa się to kosztem skomplikowania układu wewnętrznego licznika.
+
+
+\section{Licznik mod 6}
+Licznik mod 6 działa w zasadzie tak samo jak licznik czterobitowy mod 16, tyle że po osiągnięciu 6 wszystkie przerzutniki muszą być zresetowane. Możemy to osiągnąć łącząc koniunkcję bitów o wartości 2 i 4 z wejściami reset wszystkich przerzutników. Skorzystamy z asynchronicznego licznika zbudowanego wcześniej.
 
 \begin{figure}[H]
 \centering
-\includegraphics{img/4c_table_qc}
+\includegraphics[width=\textwidth]{img/4d_circuit}
 \end{figure}
 
-\begin{figure}[H]
-\centering
-\includegraphics{img/4c_table_qb}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics{img/4c_table_qa}
-\end{figure}
-
-Na podstawie uzyskanych funkcji logicznych zrealizowano następujący układ, w którym wejścia D przerzutników są sterowane uzyskanymi funkcjami:
-
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{img/4c}
-\end{figure}
-
-\section{Synchroniczny licznik mod 6}
-Mając synchroniczny licznik mod 8, zrealizowanie licznika mod 6 nie jest dużym wyzwaniem. Zgodnie z tabelą prawdy dla tego licznika:
-
-\begin{figure}[H]
-\centering
-\includegraphics{img/4d_table}
-\end{figure}
-
-Wszystkie przerzutniki muszą zostać wyzerowane, gdy na wyjściach Qc i Qb pojawią się sygnały dodatnie. Aby to zrealizować, do schematu licznika modulo 8 dodano małą modyfikację - zerowanie przerzutników sygnałem z bramki AND łączącej Qc i Qb:
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{img/4d}
-\end{figure}
-
-
-
-
-
+Układ działa zgodnie z oczekiwaniami.
 
 \end{document}

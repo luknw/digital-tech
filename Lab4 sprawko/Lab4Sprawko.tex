@@ -158,33 +158,40 @@ Licznik ten nazywamy asynchronicznym, gdyż jego wyjście nie ustala się równo
 
 Liczniki synchroniczne rozwiązują problem liczników asynchronicznych - sygnał zegara jest podawany na każdy z przerzutników osobno, zatem redukuje się czas opóźnień.
 
+
+
 Ponieważ licznik jest modulo 8, to wystarczy, by jego wyjście było 3-bitowe.
+Niemniej jednak mając na uwadze następne punkty ćwiczenia, zrealizowano najpierw licznik mod 16 - czterobitowy
 
 Rozważmy tabelę prawdy dla każdego z wyjść licznika:
 
 \begin{figure}[H]
 \centering
-\includegraphics{img/4c_table}
+\includegraphics{img/4c_table_4bit}
 \end{figure}
 
 Na tej podstawie można stworzyć tabele Karnaugh'a dla funkcji logicznych sterujących przerzutnikami D.
 Przypomnijmy, że wyjście przerzutnika D przyjmuje wartość sygnału podanego na wejście D, gdy na wejście zegarowe podany jest sygnał wysoki.
-W poniższych tabelach przez Qc, Qb i Qa rozumiemy wartości tych wyjść przy poprzednim sygnale zegara:
- 
+W poniższych tabelach przez Qd, Qc, Qb i Qa rozumiemy wartości tych wyjść przy poprzednim sygnale zegara:
 
 \begin{figure}[H]
 \centering
-\includegraphics{img/4c_table_qc}
+\includegraphics{img/4c_table_4bit_qd}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics{img/4c_table_qb}
+\includegraphics{img/4c_table_4bit_qc}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics{img/4c_table_qa}
+\includegraphics{img/4c_table_4bit_qb}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics{img/4c_table_4bit_qa}
 \end{figure}
 
 Na podstawie uzyskanych funkcji logicznych zrealizowano następujący układ, w którym wejścia D przerzutników są sterowane uzyskanymi funkcjami:
@@ -192,9 +199,23 @@ Na podstawie uzyskanych funkcji logicznych zrealizowano następujący układ, w 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{img/4c}
+\includegraphics[width=\textwidth]{img/4c_4bit_mod16}
 \end{figure}
 
+Rozważmy teraz tabelę prawdy dla licznika modulo 8:
+
+\begin{figure}[H]
+\centering
+\includegraphics{img/4c_table_4bit_mod8}
+\end{figure}
+
+Widać zatem, że gdy najstarszy bit wyjścia przyjmuje wartość dodatnią, musi zostać wyzerowany. Wystarczy więc zatem podać wartość najstarszego bitu wyjścia na wejście RESET przerzutnika przy wyjściu Qd. Otrzymujemy wtedy schemat:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/4c_4bit_mod8}
+\end{figure} 
+Który, jak widać z Logic Analyzera działa poprawnie.
 \section{Synchroniczny licznik mod 6}
 Mając synchroniczny licznik mod 8, zrealizowanie licznika mod 6 nie jest dużym wyzwaniem. Zgodnie z tabelą prawdy dla tego licznika:
 
@@ -203,21 +224,22 @@ Mając synchroniczny licznik mod 8, zrealizowanie licznika mod 6 nie jest dużym
 \includegraphics{img/4d_table}
 \end{figure}
 
-Wszystkie przerzutniki muszą zostać wyzerowane, gdy na wyjściach Qc i Qb pojawią się sygnały dodatnie. Aby to zrealizować, do schematu licznika modulo 8 dodano małą modyfikację - zerowanie przerzutników sygnałem z bramki AND łączącej Qc i Qb:
+Wszystkie przerzutniki muszą zostać wyzerowane, gdy na wyjściach Qc i Qb pojawią się sygnały dodatnie. Aby to zrealizować, do schematu licznika modulo 8 dodano następującą modyfikację - zerowanie przerzutników sygnałem z bramki AND łączącej Qc i Qb:
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{img/4d}
+\includegraphics[width=\textwidth]{img/4d_4bit_mod6}
 \end{figure}
 
+Ten licznik równie dobrze mógłby mieć wyjście 3-bitowe.
 
 \section{Synchroniczny licznik mod (dowolna 3-bitowa liczba)}
 
-Wykorzystując zasadę działania licznika mod 6, zrealizowano licznik, który zwraca resztę z dzielenia liczby taktów zegara przez dowolną 3-bitową liczbę. Wykorzystano do tego 3 bramki XNOR połączone bramką AND3, które efektywnie zwracają wartość logiczną 1, gdy odpowiednie podane na ich wejścia pary bitów są sobie równe. Dzięki temu można zerować przerzutniki D, gdy osiągniemy wybraną przez nas liczbę. Licznik przetestowano wyświetlaczami siedmiosegmentowymi i stwierdzono jego poprawne działanie. 
+Wykorzystując zasadę działania licznika mod 8 oraz mod 6, zrealizowano licznik, który zwraca resztę z dzielenia liczby taktów zegara przez dowolną 4-bitową liczbę. Wykorzystano do tego 4 bramki XNOR połączone bramką AND4, które efektywnie zwracają wartość logiczną 1, gdy odpowiednie podane na ich wejścia pary bitów są sobie równe. Dzięki temu można zerować przerzutniki D, gdy osiągniemy wybraną przez nas liczbę. Licznik przetestowano wyświetlaczami siedmiosegmentowymi i stwierdzono jego poprawne działanie. 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{img/4extra}
+\includegraphics[width=\textwidth]{img/4extra_4bit}
 \end{figure}
 
 Konstrukcja ta jest mniej optymalna jeśli chodzi o wykorzystaną liczbę bramek logicznych od liczników z odgórnie zdefiniowaną liczbą, przez którą dzielą - jest ona jednak ogólniejsza w swoim działaniu.

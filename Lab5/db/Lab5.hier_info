@@ -1,0 +1,12 @@
+|Lab5
+y_or <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+b => inst7.IN0
+b => in2.DATAIN
+a => inst8.IN0
+a => in1.DATAIN
+y_xor <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+y_and <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+in1 <= a.DB_MAX_OUTPUT_PORT_TYPE
+in2 <= b.DB_MAX_OUTPUT_PORT_TYPE
+
+

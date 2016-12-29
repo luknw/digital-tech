@@ -58,7 +58,7 @@
 									           					&                           \\
 \includegraphics[height=3cm]{logo}             					& \textbf{Technika cyfrowa} \\ \hline
 \multicolumn{1}{|l|}{\textbf{Temat ćwiczenia}} 					& \textbf{Numer ćwiczenia}  \\
-\multicolumn{1}{|l|}{Liczniki}	& 2                         \\ \hline
+\multicolumn{1}{|l|}{Liczniki}	& 4                         \\ \hline
 \multicolumn{1}{|l|}{\textbf{Wykonawca}}       & \textbf{Ocena}            \\
 \multicolumn{1}{|l|}{Marcin Przewięźlikowski}          &                           \\ \hline
 \end{tabular}
@@ -70,10 +70,6 @@ Zapoznanie się z zastosowaniem przerzutników w budowaniu liczników synchronic
 
 \section{Dwójka licząca}
 
-
-Dwójka licząca służy do dzielenia częstotliwości sygnału wejściowego przez 2. Uzyskano ją na dwa sposoby:
-
-\subsection{Przerzutnik D}
 
 
 Dwójka licząca służy do dzielenia częstotliwości sygnału wejściowego przez 2. Oto jej tabela prawdy:
@@ -115,9 +111,10 @@ W związku z tym wystarczy na wejście K podać sygnał wyjściowy (Q), a na wej
 
 \section{Czterobitowy licznik asynchroniczny}
 
+\subsection{Reakcja na sygnał wzrastający}
 Do budowy czterobitowego licznika użyto dwójek liczących stworzonych za pomocą przerzutników typu T ze stale podanym na wejście T sygnałem dodatnim. Sprawia to, że przerzutniki reagują zmianą sygnału wyjściowego na wzrastający sygnał zegara.
 \par
-Tym sposobem każdy licznik dzieli częstotliwość sygnału otrzymywanego na wyjściu C przez 2. 
+Tym sposobem każdy licznik dzieli częstotliwość sygnału otrzymywanego na wyjściu C przez 2. Pierwszy licznik pokazuje częstość sygnału zegarowego podzieloną przez 2, drugi przez 4 itd.
 
 \begin{figure}[H]
 \centering
@@ -134,6 +131,8 @@ Zauważono następującą zależność sygnałów na wyjściu od liczby sygnał�
 - liczba na wyjściu jest równa 16 - (liczba sygnałów z zegara mod 16) - a więc jest to licznik liczący w tył.
 \par
 \par 
+
+\subsection{Reakcja na sygnał opadający}
 Zrealizowano także układ w oparciu o dwójki liczące reagujące na sygnał opadający z zegara. W tym celu na wejście każdego z przerzutników T w układzie dodano bramkę NOT. 
 Wtedy, gdy na wejściu bramki NOT jest sygnał opadający, podaje ona sygnał wzrastający na wejście przerzutnika T, na który ten reaguje. Efektywnie Układ NOT-T zachowuje się jak bramka T reagująca na sygnał opadający. Tak działająca bramka T również dzieli częstotliwość podanego sygnału przez 2.
 
@@ -233,7 +232,7 @@ Wszystkie przerzutniki muszą zostać wyzerowane, gdy na wyjściach Qc i Qb poja
 
 Ten licznik równie dobrze mógłby mieć wyjście 3-bitowe.
 
-\section{Synchroniczny licznik mod (dowolna 3-bitowa liczba)}
+\section{Synchroniczny licznik mod (dowolna 4-bitowa liczba)}
 
 Wykorzystując zasadę działania licznika mod 8 oraz mod 6, zrealizowano licznik, który zwraca resztę z dzielenia liczby taktów zegara przez dowolną 4-bitową liczbę. Wykorzystano do tego 4 bramki XNOR połączone bramką AND4, które efektywnie zwracają wartość logiczną 1, gdy odpowiednie podane na ich wejścia pary bitów są sobie równe. Dzięki temu można zerować przerzutniki D, gdy osiągniemy wybraną przez nas liczbę. Licznik przetestowano wyświetlaczami siedmiosegmentowymi i stwierdzono jego poprawne działanie. 
 
@@ -244,6 +243,7 @@ Wykorzystując zasadę działania licznika mod 8 oraz mod 6, zrealizowano liczni
 
 Konstrukcja ta jest mniej optymalna jeśli chodzi o wykorzystaną liczbę bramek logicznych od liczników z odgórnie zdefiniowaną liczbą, przez którą dzielą - jest ona jednak ogólniejsza w swoim działaniu.
 
-
+\section{Wnioski}
+Dzięki ćwiczeniu poznano zasady działania liczników i ich zastosowania w obliczeniach modulo. 
 
 \end{document}

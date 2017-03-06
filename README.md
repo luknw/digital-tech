@@ -1,3 +1,2 @@
-Cześć Przewięźl, mogę być pracownikiem miesiąca?
-
-Pracownik miesiąca: `Marcin Przewięźlikowski`
+# digital-tech
+Digital technology course reports
